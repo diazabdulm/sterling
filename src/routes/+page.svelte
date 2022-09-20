@@ -1,4 +1,6 @@
 <script>
+	import { now } from "svelte/internal";
+
 	export let data;
 	const { sections } = data;
 </script>
@@ -30,7 +32,7 @@
 		display: flex;
 		align-items: center;
 		justify-content: center;
-		border: 1px solid black;
+		border: 1px solid rgb(182, 169, 150);
 		margin: 0 7.5px 15px;
 		overflow: hidden;
 	}
@@ -64,13 +66,12 @@
 		font-weight: bold;
 		margin-bottom: 6px;
 		color: #4a4a4a;
-		text-transform: capitalize;
+		text-transform: uppercase;
 	}
 
 	.menu-item .subtitle {
-		font-size: 13px;
+		font-size: 15px;
 		font-weight: bold;
-		text-transform: uppercase;
 	}
 
 	.menu-item .content {
